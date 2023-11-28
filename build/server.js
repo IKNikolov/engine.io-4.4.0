@@ -466,7 +466,7 @@ class Server extends BaseServer {
         let path = (options.path || "/engine.io").replace(/\/$/, "");
         const destroyUpgradeTimeout = options.destroyUpgradeTimeout || 1000;
         // normalize path
-        path += "/";
+        // path += "/";
         function check(req) {
             return path === req.url.substr(0, path.length);
         }
